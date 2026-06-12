@@ -32,7 +32,6 @@ RUN apt clean && apt autoclean && apt autoremove --purge && du -sh /var/cache/ap
 RUN mkdir /app && cd /app
 RUN wget https://bucket.getinsight.tech/public/accidents_2017_to_2023_portugues.csv
 
-ADD accidents_2017_to_2023_portugues.csv /app
 ADD streamlit_design_matplotlib.py /app
 
 RUN pip install streamlit pandas matplotlib numpy folium seaborn streamlit-folium --break-system-packages
