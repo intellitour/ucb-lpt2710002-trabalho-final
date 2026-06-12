@@ -8,6 +8,17 @@ Aplicação interativa para análise de dados de acidentes em rodovias federais 
 
 Permite explorar padrões espaciais, temporais e causais dos acidentes por meio de gráficos e mapas interativos, auxiliando na identificação de fatores de risco para políticas públicas de segurança viária.
 
+## Jeito Fácil (Docker)
+
+Para ver o projeto executando, o jeito mais fácil é via Docker, através do comando a seguir:
+
+```shell
+docker run -p 8501:8501 ghcr.io/intellitour/ucb-lpt2710002-trabalho-final:latest
+```
+<sup>A imagem foi produzida à partir do `Dockerfile`, via Github Actions.</sup>
+
+Caso queira executar localmente, veja a seguir.
+
 ## Requisitos
 
 - Python 3.9+
