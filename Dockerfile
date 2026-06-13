@@ -30,7 +30,7 @@ RUN apt-get update &&  \
 RUN apt clean && apt autoclean && apt autoremove --purge && du -sh /var/cache/apt/archives
 
 RUN mkdir /app && cd /app
-RUN wget https://bucket.getinsight.tech/public/accidents_2017_to_2023_portugues.csv
+RUN wget -nv -P /app/ https://bucket.getinsight.tech/public/accidents_2017_to_2023_portugues.csv
 
 ADD streamlit_design_matplotlib.py /app
 
