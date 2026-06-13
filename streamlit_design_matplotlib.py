@@ -1,7 +1,7 @@
 """
 Análise de acidentes de trânsito em rodovias federais brasileiras (2017–2023).
 
-Aplicação interativa em Streamlit para exploração visual de dados do DNIT,
+Aplicação interativa em Streamlit para exploração visual de dados da PRF,
 com gráficos de barras, linhas, pizza, heatmap e mapa georreferenciado.
 """
 
