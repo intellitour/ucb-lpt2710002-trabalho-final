@@ -637,11 +637,11 @@ with tab_temporal:
         df_fase = (
             df_filtered["fase_dia"]
             .value_counts()
-            .reindex(ORDEM_FASES, fill_value=0)
+            #.reindex(ORDEM_FASES, fill_value=0)
             .reset_index(name="count")
         )
         fig_fase, ax_fase = plt.subplots(figsize=(8, 3.5))
-        colors_fase = plt.cm.PuOr(np.linspace(0.3, 1.0, len(df_fase)))
+        colors_fase = plt.cm.PuOr(np.linspace(0.7, 1.0, len(df_fase)))
         grafico_barras(
             ax_fase, df_fase["fase_dia"], df_fase["count"], colors_fase,
             "Acidentes por Fase do Dia",
